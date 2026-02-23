@@ -4,7 +4,7 @@
 int maior_elemento(int vetor[], int n) {
     if (n <= 0) {
         printf("O vetor está vazio.\n");
-        return -1;
+        return 0;
     } else if (n == 1) {
         return vetor[0];
     } else {
@@ -23,7 +23,7 @@ int main()
     int tamanho = 0;
     
     int maior = maior_elemento(vetor, tamanho);
-    if (maior == -1) {
+    if (maior == 0) {
         printf("Nao foi possivel encontrar o maior elemento.");
     } else {
         printf("O maior elemento é: %d\n", maior);
