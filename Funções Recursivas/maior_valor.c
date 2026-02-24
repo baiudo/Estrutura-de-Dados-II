@@ -20,7 +20,7 @@ int maior_elemento(int vetor[], int n) {
 int main()
 {
     int vetor[] = {6, 3, 7, 1, 2, 4, 5, 9, 0, 8};
-    int tamanho = 0;
+    int tamanho = sizeof(vetor) / sizeof(vetor[0]); //este cálculo retorna o tamanho do vetor
     
     int maior = maior_elemento(vetor, tamanho);
     if (maior == 0) {
