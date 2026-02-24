@@ -23,13 +23,16 @@ int primo (int n) {
 
 int main()
 {   
-    int n = 29;
+    int n;
+    
+    printf("Digite um número para saber se ele é primo.\n");
+    scanf("%d", &n);
     
     if (primo(n) == 0) {
-        printf("O número %d naõ é primo.", n);
+        printf("O número %d não é primo.", n);
     } else {
         printf("O número %d é primo.", n);
     }
-    
+
     return 0;
 }
