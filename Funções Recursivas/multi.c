@@ -19,7 +19,11 @@ int mult (int a, int b) {
 
 int main()
 {
-    int resultado = mult(-1, 4);
+    int a, b;
+    printf("Digite 2 número positivos.\n");
+    scanf("%d %d", &a, &b);
+    
+    int resultado = mult(a, b);
     printf("A multiplicação é: %d", resultado);
     
     return 0;
