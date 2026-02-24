@@ -15,7 +15,10 @@ int main()
 {
     int vetor[] = {6, 3, 7, 1, 2, 4, 5, 9, 0, 8};
     int tamanho = sizeof(vetor) / sizeof(vetor[0]); //este cálculo retorna o tamanho do vetor
-    int n = 2;
+    int n;
+    
+    printf("Qual número deseja busar no vetor?\n");
+    scanf("%d", &n);
     
     int busca = buscar(vetor, tamanho, n);
     
